@@ -7,7 +7,14 @@
   },
   "rules": {
     "semi": "off",
-    "linebreak-style": ["error", "windows"]
+    "linebreak-style": ["error", "windows"],
+    "valid-jsdoc": "off",
+    "require-jsdoc": "off",
+    "indent": ["error", 4],
+    "comma-dangle": "off",
+    "no-cond-assign": ["error", "always"],
+    "operator-linebreak": "off",
+    "no-unused-vars": "off"
   },
   "extends": [
     "eslint:recommended", "google"
