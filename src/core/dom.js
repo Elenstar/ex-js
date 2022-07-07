@@ -33,6 +33,28 @@ class Dom {
         }
         return this
     }
+
+    get data() {
+        return this.$el.dataset
+    }
+
+    closest(selector) {
+        return $(this.$el.closest(selector))
+    }
+
+    getCoordinates() {
+        return this.$el.getBoundingClientRect()
+    }
+
+    findAll(selector) {
+        return this.$el.querySelectorAll(selector)
+    }
+
+    css(styles = {}) {
+        Object.keys(styles).forEach((key) => {
+            this.$el.style[key] = styles[key]
+        })
+    }
 }
 
 $('div').html('<h1>Test</h1>').clear()
