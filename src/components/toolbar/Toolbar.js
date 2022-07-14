@@ -3,10 +3,10 @@ import {ExComponent} from '@core/ExComponent'
 export class Toolbar extends ExComponent {
     static className = 'ex__toolbar'
 
-    constructor($root) {
+    constructor($root, options) {
         super($root, {
             name: 'Toolbar',
-            listeners: ['click']
+            ...options
         })
     }
 
@@ -37,9 +37,5 @@ export class Toolbar extends ExComponent {
             </div>
 
         `
-    }
-
-    onClick(event) {
-        console.log(event.target)
     }
 }

@@ -2,6 +2,14 @@ import {ExComponent} from '@core/ExComponent'
 
 export class Header extends ExComponent {
     static className = 'ex__header'
+
+    constructor($root, options) {
+        super($root, {
+            name: 'Header',
+            ...options,
+        })
+    }
+
     toHTML() {
         return `
             <input type="text" class="input" value="Новая таблица" />
