@@ -14,7 +14,8 @@
     "comma-dangle": "off",
     "no-cond-assign": ["error", "always"],
     "operator-linebreak": "off",
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+    "no-debugger": "off"
   },
   "extends": [
     "eslint:recommended", "google"
